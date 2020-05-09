@@ -3,7 +3,7 @@ class TodolistsController < ApplicationController
     @list = List.new
   end
   def create
-    # ストロングパラメーターを使用
+    
      list = List.new(list_params)
     # DBへ保存する
      list.save
